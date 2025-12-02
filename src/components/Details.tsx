@@ -2,11 +2,11 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { type Article } from "../types"
 import { Link } from "react-router-dom"
-import { Container, Row, Col, Card, Button } from "react-bootstrap"
+import { Container, Row, Col, Card } from "react-bootstrap"
 
 const Details = () => {
   const { id } = useParams()
-  const [art, setArt] = useState<Article[] | null>(null)
+  const [art, setArt] = useState<Article | null>(null)
 
   useEffect(() => {
     fetch(`https://api.spaceflightnewsapi.net/v4/articles/${id}`)

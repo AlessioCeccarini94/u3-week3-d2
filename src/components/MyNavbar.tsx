@@ -15,7 +15,7 @@ const MyNavbar = () => {
               Home
             </Link>
             <Link className="nav-link" to="./details">
-              Details
+              Blogs
             </Link>
           </Nav>
         </Navbar.Collapse>
