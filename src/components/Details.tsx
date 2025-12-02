@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { type Article } from "../types"
 import { Link } from "react-router-dom"
-import { Container, Row, Col, Card } from "react-bootstrap"
+import { Container, Row, Col, Card, Spinner } from "react-bootstrap"
 
 const Details = () => {
   const { id } = useParams()
@@ -26,7 +26,11 @@ const Details = () => {
   }, [id])
 
   if (!art) {
-    return <p>Loading...</p>
+    return (
+      <div className="d-flex justify-content-center">
+        <Spinner animation="border" variant="info" />
+      </div>
+    )
   }
 
   return (
