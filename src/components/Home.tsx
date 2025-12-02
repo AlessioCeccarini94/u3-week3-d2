@@ -29,6 +29,7 @@ const Home = () => {
   }, [])
   return (
     <Container>
+      <h1 className="text-center my-3 font-monospace">Home</h1>
       <Row className=" justify-content-center text-center row-cols-1 row-cols-md-2 row-cols-lg-3">
         {articles.map((article) => {
           return (
