@@ -31,10 +31,10 @@ const Details = () => {
 
   return (
     <Container>
-      <Row>
+      <Row className=" justify-content-center text-center row-cols-1 row-cols-md-2 ">
         <Col>
           <Card className="h-100">
-            <Card.Img variant="top" src={art.image_url} />
+            <Card.Img className="img-fluid" variant="top" src={art.image_url} />
             <Card.Body className="d-flex flex-column justify-content-between">
               <Card.Title>{art.title} </Card.Title>
               <Card.Text>
