@@ -5,3 +5,11 @@ export interface Article {
   summary: string
   published_at: string
 }
+
+export interface Blog {
+  id: number
+  title: string
+  image_url: string
+  summary: string
+  published_at: string
+}
